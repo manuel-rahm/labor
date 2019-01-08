@@ -3,10 +3,14 @@ body {
 }
 
 body h2 {
-  color: aqua;
+  color: blue;
 }
 
 body h3 {
-  color: yellow;
+  color: blue;
+}
+
+body p {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
