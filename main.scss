@@ -1,0 +1,15 @@
+$manuel: blue;
+$colors: (
+    1: yellow,
+    2: red
+);
+
+body {
+    color: $manuel;
+    h2 {
+        color: aqua;
+    }
+    h3 {
+        color: map-get($colors, 1)
+    }
+}
