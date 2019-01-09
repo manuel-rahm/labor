@@ -2,13 +2,17 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+.titelbild {
+  width: 270px;
+}
+
 .sky {
   position: fixed;
   width: 192px;
   bottom: 0;
   margin-bottom: 0;
   font-weight: bold;
-  background: grey;
+  background: rgb(184, 109, 202);
   padding: 5px 5px 5px 5px;
   left: 0;
   border-radius: 50px;
@@ -16,7 +20,7 @@ body {
 }
 
 .content {
-  margin-left: 200px;
+  margin-left: 350px;
   margin-right: 120px;
 }
 
@@ -36,11 +40,19 @@ body {
 
 a {
   text-decoration: none;
-  padding: 30px;
+  padding: 10px 20px;
   color: black;
+  text-align: center;
+  width: 260px;
 }
 
 .navbar a {
   border: 1px solid #555;
+}
+
+.navbar a:hover {
+  background: lightgrey;
+  text-decoration: underline;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=main.css.map */
