@@ -49,8 +49,7 @@ a {
   transition: 0.2s;
 }
 
-p {
-  color: #cd6699;
+body p {
   min-width: 412px;
   max-width: 700px;
 }
@@ -66,7 +65,7 @@ li {
 
 .sky {
   position: fixed;
-  width: 150px;
+  width: 130px;
   bottom: 0;
   margin-bottom: 0;
   font-weight: bold;
@@ -76,5 +75,14 @@ li {
   border-radius: 50px;
   margin: 0 0 8px 8px;
   color: black;
+  opacity: 0.7;
+}
+
+h1 {
+  color: #cd6699;
+}
+
+.Link {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
