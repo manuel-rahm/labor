@@ -4,20 +4,7 @@ body {
 
 .titelbild {
   width: 270px;
-}
-
-.sky {
   position: fixed;
-  width: 150px;
-  bottom: 0;
-  margin-bottom: 0;
-  font-weight: bold;
-  background: #cd6699;
-  padding: 5px 5px 5px 5px;
-  left: 0;
-  border-radius: 50px;
-  margin: 0 0 8px 8px;
-  color: black;
 }
 
 .content {
@@ -38,6 +25,7 @@ body {
   background-color: #cd6699;
   border: 1px solid #555;
   border-radius: 7px;
+  margin-top: 150px;
 }
 
 a {
@@ -63,11 +51,30 @@ a {
 
 p {
   color: #cd6699;
-  min-width: 214px;
+  min-width: 412px;
+  max-width: 700px;
 }
 
 .sass_syntax {
   border-radius: 10px;
   width: 450px;
+}
+
+li {
+  min-width: 261px;
+}
+
+.sky {
+  position: fixed;
+  width: 150px;
+  bottom: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  background: #cd6699;
+  padding: 5px 5px 5px 5px;
+  left: 0;
+  border-radius: 50px;
+  margin: 0 0 8px 8px;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
