@@ -19,6 +19,7 @@
         <a href="#Mixins">Mixins</a>
         <a href="#Inherit">Inherit</a>
         <a href="#Loops">Loops</a>
+        <a href="#Auftrag">Auftrag</a>
     </nav>
     <div class="content">
     <h1 id="Einführung">Einführung</h1>
@@ -42,15 +43,33 @@
     <p>Am besten geht die Kompilierung mit einer Erweiterung für Visual Studio Code, wie z.B<br/><a class="Link" href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass" target="_blank">Live Sass Compiler</a>
     <br/>
     Diesen kann man ganz einfach auf der Internetseite herunterladen und in Microsoft Visual Studio Code installieren. Der Live Sass Compiler hat die Funktion, eine CSS-Datei zu generieren und diese direkt beim Abspeichern der Sass-Datei zu aktualisieren.
+    Damit diese Funktion läuft, muss man bei Microsoft Visual Studio auf "Watch" klicken. Danach sollte die CSS-Datei erstellt werden und die Sass-Datei hat nun eine direkte Verbindung zur CSS-Datei.
     </p>
+    <img class="sass_syntax" src="img/watch_sass.PNG" alt="Watch-Sass">
     <h1 id="Nesting">Nesting</h1>
     <p><b>Nesting</b> ist die Verschachtelung, wie wir bei HTML haben. Diese Funktion bringt Sass auch mit sich. Viele Entwickler, die grosse Seiten schreiben, benutzen ein Stylesheet wie Sass, um die Übersicht mit der Verschachtelung zu verbessern.</p>
     <img class="sass_syntax" src="img/nesting.jpg" alt="Nesting Beispiel">
-
+    <p>In diesem Beispiel sieht man, dass das a in Sass unter dem .class untergeordnet ist. Bei CSS ist es jedoch seperat aufgelistet.
+        Dies hilft uns, wenn wir wissen, wo ein Element untergeordnet ist. Dann finden wir das gesuchte Element leichter.</p>
     <h1 id="Variablen">Variablen</h1>
+    <p>Variablen erlauben es uns, Werte ganz leicht wieder und wieder zu verwenden. Hierbei legt man einen Wert fest und einen Ansprechterm. Diesen Term kann man dann benutzen um diesen Wert anzusprechen.</p>
+    <img class="sass_syntax" src="img/sass_variablen.jpg" alt="Variabeln">
+    <p>Es sollten folgende Bedingungen zutreffen, damit die Erstellung einer Variablen Sinn macht.</p>
+    <ul>
+        <li>Der Wert wiederholt sich mindestens zweimal</li>
+        <li>Der Wert wird vorraussichtlich einmal aktualisiert</li>
+    </ul>
     <h1 id="Mixins">Mixins</h1>
+    <p>Mixins erlauben es dem Autor durch sein gesamtes Stylesheet hinweg Styles wiederzuverwenden, ohne auf nicht-semantische Klassen wie .float-left zurückzufallen.</p>
+    <p>Mixins können ganze CSS-Regeln beinhalten. Auch Parameter und Funktionen sind möglich. Viele Entwickler halten sich hier nicht an K.I.S.S (Keep it simple and stupid).
+        Sollte ein Mixin länger als 20 Zeilen sein, sollte man es lieber in kleinere Teile aufteilen.
+    </p>
+    <h2>Grundlagen</h2>
+    <p>Es gibt eine Faustregel, die man bei Mixins beachten sollte.</p>
     <h1 id="Inherit">Inherit</h1>
     <h1 id="Loops">Loops</h1>
+    <p></p>
+    <h1 id="Auftrag">Auftrag</h1>
     <footer>
         <h5 class="sky">
             Made by Ehrbar & Rahm 
