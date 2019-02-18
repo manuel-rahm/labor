@@ -28,6 +28,7 @@
         Unsere Wissensquelle ist die Seite: <a class="Link" href="https://sass-guidelin.es/de/" target="_blank">Sass Guidelines</a>
     </p>
     <p>Bei Bedarf könnt ihr euch auch noch in Sass Guidelines reinlesen. Bei der Seite gibt es eine gute Kurzzusammenfassung von den wichtigsten Informationen über Sass.</p>
+    <p>CSS ist eine einfache Sprache. Da Sass beabsichtigt CSS zu schreiben, sollte es niemals komplexer als normales CSS werden. Das KISS Prinzip (Keep it simple, stupid) ist in diesem Fall der Schlüssel, und hat unter gewissen Umständen sogar vorrang über DRY (Don’t repeat yourself).</p>
     <h1 id="Syntax">Syntax</h1>
     <p>Die Syntax von Sass hat das Grundprinzip von CSS übernommen, jedoch hat Sass gewisse Dinge vereinfacht.
         Eines dieser Dinge wäre, dass es keine Semikola und geschweiften Klammern mehr braucht.</p>
@@ -52,7 +53,7 @@
     <p>In diesem Beispiel sieht man, dass das a in Sass unter dem .class untergeordnet ist. Bei CSS ist es jedoch seperat aufgelistet.
         Dies hilft uns, wenn wir wissen, wo ein Element untergeordnet ist. Dann finden wir das gesuchte Element leichter.</p>
     <h1 id="Variablen">Variablen</h1>
-    <p>Variablen erlauben es uns, Werte ganz leicht wieder und wieder zu verwenden. Hierbei legt man einen Wert fest und einen Ansprechterm. Diesen Term kann man dann benutzen um diesen Wert anzusprechen.</p>
+    <p><b>Variablen</b> erlauben es uns, Werte ganz leicht wieder zu verwenden. Hierbei legt man einen Wert fest und einen Ansprechterm. Diesen Term kann man dann benutzen um diesen Wert anzusprechen.</p>
     <img class="sass_syntax" src="img/sass_variablen.jpg" alt="Variabeln">
     <p>Es sollten folgende Bedingungen zutreffen, damit die Erstellung einer Variablen Sinn macht.</p>
     <ul>
@@ -65,11 +66,29 @@
         Sollte ein Mixin länger als 20 Zeilen sein, sollte man es lieber in kleinere Teile aufteilen.
     </p>
     <h2>Grundlagen</h2>
-    <p>Es gibt eine Faustregel, die man bei Mixins beachten sollte.</p>
+    <p>Es gibt eine Faustregel, die man bei Mixins beachten sollte. Wenn Ihnen auffällt, dass eine bestimmte Gruppe von CSS Werten immer zusammen auftritt (also nicht zufällig), dann können Sie ein Mixin daraus machen.</p>
+    <img class="sass_syntax" src="img/sass_mixin.PNG" alt="sassmixin">
+    <h2>Parameterlose Mixins</h2>
+    <p>Manchmal werden Mixins nur dazu benutzt, um zu verhindern dass man eine Gruppe von Deklarationen immer und immer wieder wiederholt. Dennoch brauchen sie keine Parameter oder haben sensible Standardwerte welche nicht notwendigerweise einen Parameter benötigen.
+        In solchen Fällen können wir beim Aufruf ohne Probleme die Klammern weglassen. Das @include Keyword (oder + Zeichen in der Intended-Syntax) verhält sich bereits als ein Indikator dafür dass die Zeile ein Mixinaufruf ist; es werden keine extra Klammern benötigt.</p>
     <h1 id="Inherit">Inherit</h1>
+    <p>@extend ist eine Funktion von Sass, mit der Klassen einen Satz von Eigenschaften miteinander teilen können. Bei Auswahlelementen, die eine Klasse in Sass erweitern, wird deren Auswahl direkt neben der Klasse eingefügt, die erweitert wird, was zu einer durch Kommas getrennten Liste führt.
+    </p>
+    <p>Das sieht dann so aus: @extend .class-name;</p>
     <h1 id="Loops">Loops</h1>
-    <p></p>
+    <p>Da Sass komplexe Datenstrukturen wie Listen und Maps anbietet, ist es keine Überraschung das es Autoren ebenfalls die Möglichkeit gibt über diese zu iterieren.</p>
+    <h2>each</h2>
+    <p>Der @each-Loop ist definitiv der meist genutzte aller von Sass zur Verfügung gestellten Loops. Es bietet eine saubere API um über eine Liste oder Map zu iterieren.</p>
+    <img class="sass_syntax" src="img/each.PNG" alt="eachloop">
+    <h2>for</h2>
+    <p>Der @for-Loop ist in Kombination mit der CSS Pseudoklasse :nth-* hilfreich. Außer in diesem Fall, solltest du eher einen @each-Loop verwenden wenn du über etwas iterieren musst.</p>
+    <img class="sass-syntax" src="img/for.PNG" alt="forloop">
     <h1 id="Auftrag">Auftrag</h1>
+    <p>Das ist ein Auftrag, indem es darum geht, dass Sie sich noch einmal mit Sass selbst auseinandersetzen.</p>
+    <p>Hier ist der Link zum Online-Tutorial: <a href="https://www.codecademy.com/learn/learn-sass"><b>Code-Academy</b></a></p>
+    <p>Melden Sie sich hier bitte an und führen Sie dieses Tutorial durch. Hierbei handelt es sich um SCSS und nicht um Sass. Dies spielt keine Rolle, da Sass und SCSS bis auf die geschweiften Klammern und Semikola gleich sind.</p>
+    <h1 id="Schlussquiz">Schlussquiz</h1>
+    <iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=4CEJItdqx0OI6P-OcKe50_VRfb8-WqFLv9xhlXCbrlZUNlNSSUdXU1dEMFg0N0I1SjhGUjhCN01aQy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
     <footer>
         <h5 class="sky">
             Made by Ehrbar & Rahm 
